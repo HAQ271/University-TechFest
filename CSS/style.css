@@ -932,3 +932,35 @@ tbody tr:hover {
 
     white-space: nowrap;
 }
+
+
+/* ==========================================
+   REGISTRATION SUMMARY
+   ========================================== */
+
+.registration-summary {
+    margin-top: 28px;
+    padding: 24px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow-card);
+}
+
+.registration-summary h2 {
+    margin-bottom: 18px;
+}
+
+.registration-summary p {
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+
+.registration-summary p:last-child {
+    margin-bottom: 0;
+}
+
+.success-message {
+    color: #15803d;
+    font-weight: 600;
+}
