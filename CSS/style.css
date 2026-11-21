@@ -830,3 +830,105 @@ tbody tr:hover {
     }
 
 }
+
+/* =========================================
+   DYNAMIC EVENT CARD STYLING
+========================================= */
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 22px;
+
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+
+    box-shadow: var(--shadow-card);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-4px);
+}
+
+.event-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.event-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.event-badge.competition {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+.event-badge.workshop {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+.event-badge.talk {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.event-day {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-muted);
+}
+
+.event-card h3 {
+    font-size: 1.2rem;
+}
+
+.event-details {
+    display: grid;
+    gap: 7px;
+}
+
+.event-details p {
+    font-size: 0.9rem;
+}
+
+.event-card .btn {
+    margin-top: auto;
+}
+
+
+
+/* =========================================
+   EVENT SCHEDULE BUTTON SIZE FIX
+========================================= */
+
+.event-card .add-to-schedule {
+    width: 100%;
+    height: 50px;
+    min-height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 12px;
+
+    font-size: 0.9rem;
+    line-height: 1.3;
+
+    white-space: nowrap;
+}

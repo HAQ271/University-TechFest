@@ -38,4 +38,4 @@ BSCS Student — UMT
 
 ## License
 
-This project is developed for academic purposes.
+This project is developed for academic purposes.git
